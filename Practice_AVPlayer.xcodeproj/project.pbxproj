@@ -13,8 +13,10 @@
 		134003B52C3BFC8E00ABD27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134003B42C3BFC8E00ABD27F /* Assets.xcassets */; };
 		134003B82C3BFC8E00ABD27F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 134003B72C3BFC8E00ABD27F /* Base */; };
 		134003C32C3BFDD900ABD27F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134003C22C3BFDD900ABD27F /* TabBarController.swift */; };
-		134003C52C3BFE8B00ABD27F /* AVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134003C42C3BFE8B00ABD27F /* AVPlayerViewController.swift */; };
-		134003C72C3BFEDC00ABD27F /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134003C62C3BFEDC00ABD27F /* AVPlayerView.swift */; };
+		134003C52C3BFE8B00ABD27F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134003C42C3BFE8B00ABD27F /* ViewController.swift */; };
+		134003C72C3BFEDC00ABD27F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134003C62C3BFEDC00ABD27F /* ContentView.swift */; };
+		13EBFFA52C3CFC7B00076A0E /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EBFFA42C3CFC7B00076A0E /* Int+Extension.swift */; };
+		13EBFFA72C3CFCC700076A0E /* MediaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EBFFA62C3CFCC700076A0E /* MediaConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,10 @@
 		134003B72C3BFC8E00ABD27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		134003B92C3BFC8E00ABD27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		134003C22C3BFDD900ABD27F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		134003C42C3BFE8B00ABD27F /* AVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewController.swift; sourceTree = "<group>"; };
-		134003C62C3BFEDC00ABD27F /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		134003C42C3BFE8B00ABD27F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		134003C62C3BFEDC00ABD27F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		13EBFFA42C3CFC7B00076A0E /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		13EBFFA62C3CFCC700076A0E /* MediaConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			children = (
 				134003BF2C3BFCE200ABD27F /* App */,
 				134003C12C3BFCF200ABD27F /* View */,
+				13EBFFA32C3CFC6A00076A0E /* Common */,
 				134003C02C3BFCE900ABD27F /* Resources */,
 			);
 			path = Practice_AVPlayer;
@@ -91,10 +96,19 @@
 			children = (
 				134003AF2C3BFC8D00ABD27F /* BaseViewController.swift */,
 				134003C22C3BFDD900ABD27F /* TabBarController.swift */,
-				134003C42C3BFE8B00ABD27F /* AVPlayerViewController.swift */,
-				134003C62C3BFEDC00ABD27F /* AVPlayerView.swift */,
+				134003C42C3BFE8B00ABD27F /* ViewController.swift */,
+				134003C62C3BFEDC00ABD27F /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		13EBFFA32C3CFC6A00076A0E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				13EBFFA62C3CFCC700076A0E /* MediaConstants.swift */,
+				13EBFFA42C3CFC7B00076A0E /* Int+Extension.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,12 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				134003C72C3BFEDC00ABD27F /* AVPlayerView.swift in Sources */,
+				134003C72C3BFEDC00ABD27F /* ContentView.swift in Sources */,
 				134003C32C3BFDD900ABD27F /* TabBarController.swift in Sources */,
 				134003B02C3BFC8D00ABD27F /* BaseViewController.swift in Sources */,
+				13EBFFA52C3CFC7B00076A0E /* Int+Extension.swift in Sources */,
+				13EBFFA72C3CFCC700076A0E /* MediaConstants.swift in Sources */,
 				134003AC2C3BFC8D00ABD27F /* AppDelegate.swift in Sources */,
 				134003AE2C3BFC8D00ABD27F /* SceneDelegate.swift in Sources */,
-				134003C52C3BFE8B00ABD27F /* AVPlayerViewController.swift in Sources */,
+				134003C52C3BFE8B00ABD27F /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

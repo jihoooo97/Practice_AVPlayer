@@ -8,7 +8,10 @@
 import UIKit
 
 open class BaseViewController: UIViewController {
-
+    
+    public lazy var safeArea = view.safeAreaLayoutGuide
+    
+    
     open override func viewDidLoad() {
         super.viewDidLoad()
         

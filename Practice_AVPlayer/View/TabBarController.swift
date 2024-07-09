@@ -21,10 +21,10 @@ public class TabBarController: UITabBarController {
     
     
     private func setTab() {
-        let uikitView = AVPlayerViewController()
+        let uikitView = ViewController()
         uikitView.tabBarItem = .init(title: "UIKit", image: .init(systemName: "1.square"), tag: 0)
         
-        let swiftuiView = UIHostingController(rootView: AVPlayerView())
+        let swiftuiView = UIHostingController(rootView: ContentView())
         swiftuiView.tabBarItem = .init(title: "SwiftUI", image: .init(systemName: "2.square"), tag: 1)
         
         self.setViewControllers([uikitView, swiftuiView], animated: true)
