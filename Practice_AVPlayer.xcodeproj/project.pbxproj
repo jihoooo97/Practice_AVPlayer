@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133B463C2C3ED75800BBDB15 /* AudioPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133B463B2C3ED75800BBDB15 /* AudioPlayViewController.swift */; };
+		133B463E2C3ED76200BBDB15 /* VideoPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133B463D2C3ED76200BBDB15 /* VideoPlayViewController.swift */; };
 		134003AC2C3BFC8D00ABD27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134003AB2C3BFC8D00ABD27F /* AppDelegate.swift */; };
 		134003AE2C3BFC8D00ABD27F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134003AD2C3BFC8D00ABD27F /* SceneDelegate.swift */; };
 		134003B02C3BFC8D00ABD27F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134003AF2C3BFC8D00ABD27F /* BaseViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		133B463B2C3ED75800BBDB15 /* AudioPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayViewController.swift; sourceTree = "<group>"; };
+		133B463D2C3ED76200BBDB15 /* VideoPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayViewController.swift; sourceTree = "<group>"; };
 		134003A82C3BFC8D00ABD27F /* Practice_AVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice_AVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		134003AB2C3BFC8D00ABD27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		134003AD2C3BFC8D00ABD27F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13178FBA2C3ECAFE005C8AC4 /* UIKIt */ = {
+			isa = PBXGroup;
+			children = (
+				134003AF2C3BFC8D00ABD27F /* BaseViewController.swift */,
+				134003C22C3BFDD900ABD27F /* TabBarController.swift */,
+				134003C42C3BFE8B00ABD27F /* ViewController.swift */,
+				133B463B2C3ED75800BBDB15 /* AudioPlayViewController.swift */,
+				133B463D2C3ED76200BBDB15 /* VideoPlayViewController.swift */,
+			);
+			path = UIKIt;
+			sourceTree = "<group>";
+		};
+		13178FBB2C3ECB0D005C8AC4 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				134003C62C3BFEDC00ABD27F /* ContentView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		1340039F2C3BFC8D00ABD27F = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +118,8 @@
 		134003C12C3BFCF200ABD27F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				134003AF2C3BFC8D00ABD27F /* BaseViewController.swift */,
-				134003C22C3BFDD900ABD27F /* TabBarController.swift */,
-				134003C42C3BFE8B00ABD27F /* ViewController.swift */,
-				134003C62C3BFEDC00ABD27F /* ContentView.swift */,
+				13178FBA2C3ECAFE005C8AC4 /* UIKIt */,
+				13178FBB2C3ECB0D005C8AC4 /* SwiftUI */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,10 +206,12 @@
 				134003C72C3BFEDC00ABD27F /* ContentView.swift in Sources */,
 				134003C32C3BFDD900ABD27F /* TabBarController.swift in Sources */,
 				134003B02C3BFC8D00ABD27F /* BaseViewController.swift in Sources */,
+				133B463C2C3ED75800BBDB15 /* AudioPlayViewController.swift in Sources */,
 				13EBFFA52C3CFC7B00076A0E /* Int+Extension.swift in Sources */,
 				13EBFFA72C3CFCC700076A0E /* MediaConstants.swift in Sources */,
 				134003AC2C3BFC8D00ABD27F /* AppDelegate.swift in Sources */,
 				134003AE2C3BFC8D00ABD27F /* SceneDelegate.swift in Sources */,
+				133B463E2C3ED76200BBDB15 /* VideoPlayViewController.swift in Sources */,
 				134003C52C3BFE8B00ABD27F /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

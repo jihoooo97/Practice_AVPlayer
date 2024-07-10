@@ -7,7 +7,7 @@
 
 public extension Int {
     
-    var secondsDigitInt: Int { self % 60 }
     var miniuteDigitInt: Int { self / 60 }
+    var secondsDigitInt: Int { self % 60 }
     
 }
