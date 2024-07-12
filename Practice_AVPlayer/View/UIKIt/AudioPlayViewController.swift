@@ -70,8 +70,8 @@ final class AudioPlayViewController: BaseViewController {
             let currentTime = CMTimeGetSeconds(currentSeconds)
             let totalTime = CMTimeGetSeconds(self?.player.currentItem?.duration ?? CMTimeMake(value: 1, timescale: 1))
             
-            guard !currentTime.isNaN || !currentTime.isInfinite,
-                  !totalTime.isNaN || !totalTime.isInfinite
+            guard !currentTime.isNaN && !currentTime.isInfinite,
+                  !totalTime.isNaN && !totalTime.isInfinite
             else { return }
             
             let currentTimeSeconds = Int(currentTime)

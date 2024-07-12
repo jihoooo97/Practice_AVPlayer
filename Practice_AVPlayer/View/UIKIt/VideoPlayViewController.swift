@@ -50,8 +50,8 @@ final class VideoPlayViewController: BaseViewController {
             let currentTime = CMTimeGetSeconds(currentSeconds)
             let totalTime = CMTimeGetSeconds(self?.player.currentItem?.duration ?? CMTimeMake(value: 1, timescale: 1))
             
-            guard !currentTime.isNaN || !currentTime.isInfinite,
-                  !totalTime.isNaN || !totalTime.isInfinite
+            guard !currentTime.isNaN && !currentTime.isInfinite,
+                  !totalTime.isNaN && !totalTime.isInfinite
             else { return }
             
             self?.slider.value = Float(currentTime / totalTime)
